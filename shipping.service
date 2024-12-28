@@ -3,8 +3,8 @@ Description=Shipping Service
 
 [Service]
 User=roboshop
-Environment=CART_ENDPOINT=cart-dev.automationbox.click:8080
-Environment=DB_HOST=mysql-dev.automationbox.click
+Environment=CART_ENDPOINT=cart-dev.aws.automation-dev.us:8080
+Environment=DB_HOST=mysql-dev.aws.automation-dev.us
 ExecStart=/bin/java -jar /app/shipping.jar
 SyslogIdentifier=shipping
 
