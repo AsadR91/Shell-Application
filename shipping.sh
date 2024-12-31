@@ -5,6 +5,7 @@ mysql_root_password=$1
 
 if [ -z "$mysql_root_password" ]; then
   echo MYSQL root Password is Missing
+  exit
 fi
 
 # shellcheck disable=SC2034
